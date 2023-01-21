@@ -1,4 +1,4 @@
-# AtlasGUI-for-YT-DLP
+# AtlasGUI for YT-DLP
 A simple, but hopefully soon also future rich, GUI for YT-DLP.
 
 A complete n00b learning VB by making this atrocious looking thing that is surprisingly simple and handy.
