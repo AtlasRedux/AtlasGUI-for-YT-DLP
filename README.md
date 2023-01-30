@@ -3,6 +3,8 @@ A simple, but hopefully soon also future rich, GUI for YT-DLP.
 
 Distros are on the [homepage](http://www.youtubetransfer.com).
 
+![AtlasGUI](https://www.youtubetransfer.com/gallery_gen/eac354be2ff3bf7c00f4c7d9a37fee4c.jpg?dl=0)
+
 A complete n00b learning VB by making this atrocious looking thing that is surprisingly simple and handy.
 
 Currently has resolution choice, multibar URL input with click to paste from clipboard, support playlists, save default folder and resolution, select audio only, reset inputs, version checking and self-updater with no need for manually downloading updates or installing.
