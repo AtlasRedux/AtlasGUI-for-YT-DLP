@@ -3,7 +3,7 @@ A simple, but hopefully soon also feature rich, GUI for YT-DLP.
 
 Distros are on the [homepage](http://www.youtubetransfer.com).
 
-![AtlasGUI](https://www.youtubetransfer.com/gallery_gen/eac354be2ff3bf7c00f4c7d9a37fee4c.jpg?dl=0)
+![AtlasGUI](https://youtubetransfer.com/gallery_gen/b995e6cf0e34a179f625b20d8ef453e6.jpg?dl=0)
 
 A complete n00b learning VB by making this atrocious looking thing that is surprisingly simple and handy.
 
