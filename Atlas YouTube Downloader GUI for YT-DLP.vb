@@ -17,8 +17,10 @@ Imports System.Xml
 Imports System.Net
 Imports System.Net.Http
 Imports System.Runtime.Versioning
+Imports System.IO
 
 Public Class Form1
+
     Public Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim versionchecker As New HttpClient
         Dim versionnumber = versionchecker.GetStringAsync("https://www.youtubetransfer.com/AtlasGUI.NewestVersion").Result
@@ -32,6 +34,8 @@ Public Class Form1
                 Close()
             End If
         End If
+
+        Dim tempname As String
 
         Dim TitleDuh As String = "Atlas' Youtube Downloader GUI for YT-DLP"
         Me.Text = TitleDuh + "        " + "Version: " + My.Settings.localversion
@@ -69,38 +73,238 @@ Public Class Form1
     End Sub
 
     Public Sub StartDownload_Click(sender As Object, e As EventArgs) Handles StartDownload.Click
-        MyUtilities.RunCommandCom("")
+        RunTheThing.RunCommandCom("")
     End Sub
 
-    Private Sub URL1Paste_Click(sender As Object, e As EventArgs) Handles URL1Paste.Click
+    Public Sub URL1Paste_Click(sender As Object, e As EventArgs) Handles URL1Paste.Click
         URL1.Text = Clipboard.GetText
+
+        Dim start_info As New ProcessStartInfo("yt-dlp", "--print filename " + URL1.Text)
+        start_info.UseShellExecute = False
+        start_info.CreateNoWindow = True
+        start_info.RedirectStandardOutput = True
+        start_info.RedirectStandardError = True
+        Dim tempnamefinder As New Process()
+        tempnamefinder.StartInfo = start_info
+
+        tempnamefinder.Start()
+
+        Dim std_out As StreamReader = tempnamefinder.StandardOutput()
+        Dim std_err As StreamReader = tempnamefinder.StandardError()
+
+        URL1Name.ForeColor = Color.Green
+        URL1Name.Text = std_out.ReadToEnd()
+        If URL1Name.Text = "" Then
+            URL1Name.Text = "VIDEO NOT FOUND!"
+            URL1Name.ForeColor = Color.Red
+        End If
     End Sub
     Private Sub URL2Paste_Click(sender As Object, e As EventArgs) Handles URL2Paste.Click
         URL2.Text = Clipboard.GetText
+
+        Dim start_info As New ProcessStartInfo("yt-dlp", "--print filename " + URL2.Text)
+        start_info.UseShellExecute = False
+        start_info.CreateNoWindow = True
+        start_info.RedirectStandardOutput = True
+        start_info.RedirectStandardError = True
+        Dim tempnamefinder As New Process()
+        tempnamefinder.StartInfo = start_info
+
+        tempnamefinder.Start()
+
+        Dim std_out As StreamReader = tempnamefinder.StandardOutput()
+        Dim std_err As StreamReader = tempnamefinder.StandardError()
+
+        URL2Name.ForeColor = Color.Green
+        URL2Name.Text = std_out.ReadToEnd()
+        If URL2Name.Text = "" Then
+            URL2Name.Text = "VIDEO NOT FOUND!"
+            URL2Name.ForeColor = Color.Red
+        End If
     End Sub
     Private Sub URL3Paste_Click(sender As Object, e As EventArgs) Handles URL3Paste.Click
         URL3.Text = Clipboard.GetText
+
+        Dim start_info As New ProcessStartInfo("yt-dlp", "--print filename " + URL3.Text)
+        start_info.UseShellExecute = False
+        start_info.CreateNoWindow = True
+        start_info.RedirectStandardOutput = True
+        start_info.RedirectStandardError = True
+        Dim tempnamefinder As New Process()
+        tempnamefinder.StartInfo = start_info
+
+        tempnamefinder.Start()
+
+        Dim std_out As StreamReader = tempnamefinder.StandardOutput()
+        Dim std_err As StreamReader = tempnamefinder.StandardError()
+
+        URL3Name.ForeColor = Color.Green
+        URL3Name.Text = std_out.ReadToEnd()
+        If URL3Name.Text = "" Then
+            URL3Name.Text = "VIDEO NOT FOUND!"
+            URL3Name.ForeColor = Color.Red
+        End If
     End Sub
     Private Sub URL4Paste_Click(sender As Object, e As EventArgs) Handles URL4Paste.Click
         URL4.Text = Clipboard.GetText
+
+        Dim start_info As New ProcessStartInfo("yt-dlp", "--print filename " + URL4.Text)
+        start_info.UseShellExecute = False
+        start_info.CreateNoWindow = True
+        start_info.RedirectStandardOutput = True
+        start_info.RedirectStandardError = True
+        Dim tempnamefinder As New Process()
+        tempnamefinder.StartInfo = start_info
+
+        tempnamefinder.Start()
+
+        Dim std_out As StreamReader = tempnamefinder.StandardOutput()
+        Dim std_err As StreamReader = tempnamefinder.StandardError()
+
+        URL4Name.ForeColor = Color.Green
+        URL4Name.Text = std_out.ReadToEnd()
+        If URL4Name.Text = "" Then
+            URL4Name.Text = "VIDEO NOT FOUND!"
+            URL4Name.ForeColor = Color.Red
+        End If
     End Sub
     Private Sub URL5Paste_Click(sender As Object, e As EventArgs) Handles URL5Paste.Click
         URL5.Text = Clipboard.GetText
+
+        Dim start_info As New ProcessStartInfo("yt-dlp", "--print filename " + URL5.Text)
+        start_info.UseShellExecute = False
+        start_info.CreateNoWindow = True
+        start_info.RedirectStandardOutput = True
+        start_info.RedirectStandardError = True
+        Dim tempnamefinder As New Process()
+        tempnamefinder.StartInfo = start_info
+
+        tempnamefinder.Start()
+
+        Dim std_out As StreamReader = tempnamefinder.StandardOutput()
+        Dim std_err As StreamReader = tempnamefinder.StandardError()
+
+        URL5Name.ForeColor = Color.Green
+        URL5Name.Text = std_out.ReadToEnd()
+        If URL5Name.Text = "" Then
+            URL5Name.Text = "VIDEO NOT FOUND!"
+            URL5Name.ForeColor = Color.Red
+        End If
     End Sub
     Private Sub URL6Paste_Click(sender As Object, e As EventArgs) Handles URL6Paste.Click
         URL6.Text = Clipboard.GetText
+
+        Dim start_info As New ProcessStartInfo("yt-dlp", "--print filename " + URL6.Text)
+        start_info.UseShellExecute = False
+        start_info.CreateNoWindow = True
+        start_info.RedirectStandardOutput = True
+        start_info.RedirectStandardError = True
+        Dim tempnamefinder As New Process()
+        tempnamefinder.StartInfo = start_info
+
+        tempnamefinder.Start()
+
+        Dim std_out As StreamReader = tempnamefinder.StandardOutput()
+        Dim std_err As StreamReader = tempnamefinder.StandardError()
+
+        URL6Name.ForeColor = Color.Green
+        URL6Name.Text = std_out.ReadToEnd()
+        If URL6Name.Text = "" Then
+            URL6Name.Text = "VIDEO NOT FOUND!"
+            URL6Name.ForeColor = Color.Red
+        End If
     End Sub
     Private Sub URL7Paste_Click(sender As Object, e As EventArgs) Handles URL7Paste.Click
         URL7.Text = Clipboard.GetText
+
+        Dim start_info As New ProcessStartInfo("yt-dlp", "--print filename " + URL7.Text)
+        start_info.UseShellExecute = False
+        start_info.CreateNoWindow = True
+        start_info.RedirectStandardOutput = True
+        start_info.RedirectStandardError = True
+        Dim tempnamefinder As New Process()
+        tempnamefinder.StartInfo = start_info
+
+        tempnamefinder.Start()
+
+        Dim std_out As StreamReader = tempnamefinder.StandardOutput()
+        Dim std_err As StreamReader = tempnamefinder.StandardError()
+
+        URL7Name.ForeColor = Color.Green
+        URL7Name.Text = std_out.ReadToEnd()
+        If URL7Name.Text = "" Then
+            URL7Name.Text = "VIDEO NOT FOUND!"
+            URL7Name.ForeColor = Color.Red
+        End If
     End Sub
     Private Sub URL8Paste_Click(sender As Object, e As EventArgs) Handles URL8Paste.Click
         URL8.Text = Clipboard.GetText
+
+        Dim start_info As New ProcessStartInfo("yt-dlp", "--print filename " + URL8.Text)
+        start_info.UseShellExecute = False
+        start_info.CreateNoWindow = True
+        start_info.RedirectStandardOutput = True
+        start_info.RedirectStandardError = True
+        Dim tempnamefinder As New Process()
+        tempnamefinder.StartInfo = start_info
+
+        tempnamefinder.Start()
+
+        Dim std_out As StreamReader = tempnamefinder.StandardOutput()
+        Dim std_err As StreamReader = tempnamefinder.StandardError()
+
+        URL8Name.ForeColor = Color.Green
+        URL8Name.Text = std_out.ReadToEnd()
+        If URL8Name.Text = "" Then
+            URL8Name.Text = "VIDEO NOT FOUND!"
+            URL8Name.ForeColor = Color.Red
+        End If
     End Sub
     Private Sub URL9Paste_Click(sender As Object, e As EventArgs) Handles URL9Paste.Click
         URL9.Text = Clipboard.GetText
+
+        Dim start_info As New ProcessStartInfo("yt-dlp", "--print filename " + URL9.Text)
+        start_info.UseShellExecute = False
+        start_info.CreateNoWindow = True
+        start_info.RedirectStandardOutput = True
+        start_info.RedirectStandardError = True
+        Dim tempnamefinder As New Process()
+        tempnamefinder.StartInfo = start_info
+
+        tempnamefinder.Start()
+
+        Dim std_out As StreamReader = tempnamefinder.StandardOutput()
+        Dim std_err As StreamReader = tempnamefinder.StandardError()
+
+        URL9Name.ForeColor = Color.Green
+        URL9Name.Text = std_out.ReadToEnd()
+        If URL9Name.Text = "" Then
+            URL9Name.Text = "VIDEO NOT FOUND!"
+            URL9Name.ForeColor = Color.Red
+        End If
     End Sub
     Private Sub URL10Paste_Click(sender As Object, e As EventArgs) Handles URL10Paste.Click
         URL10.Text = Clipboard.GetText
+
+        Dim start_info As New ProcessStartInfo("yt-dlp", "--print filename " + URL10.Text)
+        start_info.UseShellExecute = False
+        start_info.CreateNoWindow = True
+        start_info.RedirectStandardOutput = True
+        start_info.RedirectStandardError = True
+        Dim tempnamefinder As New Process()
+        tempnamefinder.StartInfo = start_info
+
+        tempnamefinder.Start()
+
+        Dim std_out As StreamReader = tempnamefinder.StandardOutput()
+        Dim std_err As StreamReader = tempnamefinder.StandardError()
+
+        URL10Name.ForeColor = Color.Green
+        URL10Name.Text = std_out.ReadToEnd()
+        If URL10Name.Text = "" Then
+            URL10Name.Text = "VIDEO NOT FOUND!"
+            URL10Name.ForeColor = Color.Red
+        End If
     End Sub
 
     Private Sub SelectFolderButton_Click(sender As Object, e As EventArgs) Handles SelectFolderButton.Click
@@ -149,7 +353,7 @@ Public Class Form1
 
 End Class
 
-Public Class MyUtilities
+Public Class RunTheThing
     Shared Sub RunCommandCom(argses As String)
         Dim SelectedResolution As String = Form1.Resolution.SelectedItem.ToString
         Dim LagringsMappe As String = Form1.LagringsMappeTB.Text
@@ -195,8 +399,32 @@ Public Class MyUtilities
         urlpos = InStr(URL10Temp, "&")
         If urlpos > 0 Then URL10Done = URL10Temp.Insert(urlpos - 1, "^")
 
-        If SetAudioOnly = False Then Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe" + " -S " + "" + "res:" + SelectedResolution + ",fps" + "" + " " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL1Done + "" + " " + "" + URL2Done + "" + " " + "" + URL3Done + "" + " " + "" + URL4Done + "" + " " + "" + URL5Done + "" + " " + "" + URL6Done + "" + " " + "" + URL7Done + "" + " " + "" + URL8Done + "" + " " + "" + URL9Done + "" + " " + "" + URL10Done + "")
-        If SetAudioOnly = True Then Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe -f ba " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL1Done + "" + " " + "" + URL2Done + "" + " " + "" + URL3Done + "" + " " + "" + URL4Done + "" + " " + "" + URL5Done + "" + " " + "" + URL6Done + "" + " " + "" + URL7Done + "" + " " + "" + URL8Done + "" + " " + "" + URL9Done + "" + " " + "" + URL10Done + "")
+        REM If SetAudioOnly = False Then Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe" + " -S " + "" + "res:" + SelectedResolution + ",fps" + "" + " " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL1Done + "" + " " + "" + URL2Done + "" + " " + "" + URL3Done + "" + " " + "" + URL4Done + "" + " " + "" + URL5Done + "" + " " + "" + URL6Done + "" + " " + "" + URL7Done + "" + " " + "" + URL8Done + "" + " " + "" + URL9Done + "" + " " + "" + URL10Done + "")
+        If SetAudioOnly = False Then
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe" + " -S " + "" + "res:" + SelectedResolution + ",fps" + "" + " " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL1Done)
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe" + " -S " + "" + "res:" + SelectedResolution + ",fps" + "" + " " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL2Done)
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe" + " -S " + "" + "res:" + SelectedResolution + ",fps" + "" + " " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL3Done)
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe" + " -S " + "" + "res:" + SelectedResolution + ",fps" + "" + " " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL4Done)
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe" + " -S " + "" + "res:" + SelectedResolution + ",fps" + "" + " " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL5Done)
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe" + " -S " + "" + "res:" + SelectedResolution + ",fps" + "" + " " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL6Done)
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe" + " -S " + "" + "res:" + SelectedResolution + ",fps" + "" + " " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL7Done)
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe" + " -S " + "" + "res:" + SelectedResolution + ",fps" + "" + " " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL8Done)
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe" + " -S " + "" + "res:" + SelectedResolution + ",fps" + "" + " " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL9Done)
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe" + " -S " + "" + "res:" + SelectedResolution + ",fps" + "" + " " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL10Done)
+        End If
 
+        REM If SetAudioOnly = True Then Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe -f ba " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL1Done + "" + " " + "" + URL2Done + "" + " " + "" + URL3Done + "" + " " + "" + URL4Done + "" + " " + "" + URL5Done + "" + " " + "" + URL6Done + "" + " " + "" + URL7Done + "" + " " + "" + URL8Done + "" + " " + "" + URL9Done + "" + " " + "" + URL10Done + "")
+        If SetAudioOnly = True Then
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe -f ba " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL1Done)
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe -f ba " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL2Done)
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe -f ba " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL3Done)
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe -f ba " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL4Done)
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe -f ba " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL5Done)
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe -f ba " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL6Done)
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe -f ba " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL7Done)
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe -f ba " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL8Done)
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe -f ba " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL9Done)
+            Process.Start("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "yt-dlp.exe -U -q " + "&" + "yt-dlp.exe -f ba " + "--yes-playlist " + "-P " + "" + LagringsMappe + "" + " " + "" + URL10Done)
+        End If
     End Sub
 End Class
