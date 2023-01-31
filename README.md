@@ -1,7 +1,7 @@
 # AtlasGUI for YT-DLP (YouTube video downloader).
 A simple, but hopefully soon also feature rich, GUI for YT-DLP.
 
-Distros are on the [homepage](http://www.youtubetransfer.com).
+Distros are on the [homepage](http://www.youtubetransfer.com) only for now due to license thingies I need to go through.
 
 ![AtlasGUI](https://youtubetransfer.com/gallery_gen/b995e6cf0e34a179f625b20d8ef453e6.jpg?dl=0)
 
