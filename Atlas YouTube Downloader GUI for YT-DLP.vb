@@ -21,7 +21,7 @@ Imports System.IO
 
 Public Class Form1
 
-    Public Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Public Async Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim versionchecker As New HttpClient
         Dim versionnumber = versionchecker.GetStringAsync("https://www.youtubetransfer.com/AtlasGUI.NewestVersion").Result
         Dim UpdateOrNot As Integer
@@ -39,6 +39,11 @@ Public Class Form1
 
         Dim TitleDuh As String = "Atlas' Youtube Downloader GUI for YT-DLP"
         Me.Text = TitleDuh + "        " + "Version: " + My.Settings.localversion
+
+        Dim UpdateDependencies As New ProcessStartInfo("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "echo Updating dependencies, please wait..." + "&" + "yt-dlp.exe -U ") REM -q
+        REM UpdateDependencies.CreateNoWindow = True
+        Process.Start(UpdateDependencies)
+
         URL1Paste.FlatStyle = FlatStyle.Flat
         URL1Paste.FlatAppearance.BorderSize = 0
         URL2Paste.FlatStyle = FlatStyle.Flat
@@ -349,6 +354,16 @@ Public Class Form1
         URL8.Text = Nothing
         URL9.Text = Nothing
         URL10.Text = Nothing
+        URL1Name.Text = Nothing
+        URL2Name.Text = Nothing
+        URL3Name.Text = Nothing
+        URL4Name.Text = Nothing
+        URL5Name.Text = Nothing
+        URL6Name.Text = Nothing
+        URL7Name.Text = Nothing
+        URL8Name.Text = Nothing
+        URL9Name.Text = Nothing
+        URL10Name.Text = Nothing
     End Sub
 
 End Class
