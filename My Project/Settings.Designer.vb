@@ -80,7 +80,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("1.4")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("1.4.01")>  _
         Public Property localversion() As String
             Get
                 Return CType(Me("localversion"),String)
