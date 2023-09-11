@@ -9,7 +9,7 @@ A complete n00b learning VB by making this atrocious looking thing that is surpr
 
 Currently has resolution choice, multibar URL input with click to paste from clipboard, support playlists, save default folder and resolution, select audio only, reset inputs, version checking and self-updater with no need for manually downloading updates or installing.
 
-Ya will need the distro on the website for it to work correctly, since the 7z includes needed dependency binaries. I might integrate them in the future, but for now, you gotta download the 7z, as it needs YT-DLP (duh), the specific version of FFMPEG for YT-DLP, and my batch file. Yes, I could make this all a part of the repo. It's a hassle. I probably will do so in the future. I'M LEARNING HERE, one thing at a time.
+Needs [YT-DLP](https://github.com/yt-dlp/yt-dlp/releases) (it will be updated automatically, only need to download once) and [FFMPEG](https://www.gyan.dev/ffmpeg/builds/#git-master-builds)
 
 I hate arrays. So I refuse to use them when possible. Which is always.
 
