@@ -22,564 +22,563 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Resolution = New System.Windows.Forms.ListBox()
-        Me.URL1 = New System.Windows.Forms.TextBox()
-        Me.StartDownload = New System.Windows.Forms.Button()
-        Me.LagringsMappeTB = New System.Windows.Forms.TextBox()
-        Me.SelectFolderButton = New System.Windows.Forms.Button()
-        Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
-        Me.URL1Paste = New System.Windows.Forms.Button()
-        Me.URL2Paste = New System.Windows.Forms.Button()
-        Me.URL2 = New System.Windows.Forms.TextBox()
-        Me.URL4Paste = New System.Windows.Forms.Button()
-        Me.URL4 = New System.Windows.Forms.TextBox()
-        Me.URL3Paste = New System.Windows.Forms.Button()
-        Me.URL3 = New System.Windows.Forms.TextBox()
-        Me.URL8Paste = New System.Windows.Forms.Button()
-        Me.URL8 = New System.Windows.Forms.TextBox()
-        Me.URL7Paste = New System.Windows.Forms.Button()
-        Me.URL7 = New System.Windows.Forms.TextBox()
-        Me.URL6Paste = New System.Windows.Forms.Button()
-        Me.URL6 = New System.Windows.Forms.TextBox()
-        Me.URL5Paste = New System.Windows.Forms.Button()
-        Me.URL5 = New System.Windows.Forms.TextBox()
-        Me.URL10Paste = New System.Windows.Forms.Button()
-        Me.URL10 = New System.Windows.Forms.TextBox()
-        Me.URL9Paste = New System.Windows.Forms.Button()
-        Me.URL9 = New System.Windows.Forms.TextBox()
-        Me.FolderDefaulter = New System.Windows.Forms.Button()
-        Me.ResDefaulter = New System.Windows.Forms.Button()
-        Me.TextBoxFolderQ = New System.Windows.Forms.TextBox()
-        Me.TextBoxResQ = New System.Windows.Forms.TextBox()
-        Me.ResetURLs = New System.Windows.Forms.Button()
-        Me.SillyLittleTextBox = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.SetAudioOnly = New System.Windows.Forms.CheckBox()
-        Me.URL1Name = New System.Windows.Forms.TextBox()
-        Me.InfoPasteURL = New System.Windows.Forms.TextBox()
-        Me.InfoManualURL = New System.Windows.Forms.TextBox()
-        Me.InfoFileName = New System.Windows.Forms.TextBox()
-        Me.URL2Name = New System.Windows.Forms.TextBox()
-        Me.URL4Name = New System.Windows.Forms.TextBox()
-        Me.URL3Name = New System.Windows.Forms.TextBox()
-        Me.URL8Name = New System.Windows.Forms.TextBox()
-        Me.URL7Name = New System.Windows.Forms.TextBox()
-        Me.URL6Name = New System.Windows.Forms.TextBox()
-        Me.URL5Name = New System.Windows.Forms.TextBox()
-        Me.URL10Name = New System.Windows.Forms.TextBox()
-        Me.URL9Name = New System.Windows.Forms.TextBox()
-        Me.SuspendLayout()
-        '
-        'Resolution
-        '
-        Me.Resolution.FormattingEnabled = True
-        Me.Resolution.ItemHeight = 32
-        Me.Resolution.Items.AddRange(New Object() {"144", "240", "360", "480", "720", "1080", "1440", "2160"})
-        Me.Resolution.Location = New System.Drawing.Point(96, 392)
-        Me.Resolution.Name = "Resolution"
-        Me.Resolution.Size = New System.Drawing.Size(65, 260)
-        Me.Resolution.TabIndex = 0
-        '
-        'URL1
-        '
-        Me.URL1.Location = New System.Drawing.Point(399, 85)
-        Me.URL1.Name = "URL1"
-        Me.URL1.Size = New System.Drawing.Size(1177, 39)
-        Me.URL1.TabIndex = 1
-        '
-        'StartDownload
-        '
-        Me.StartDownload.BackColor = System.Drawing.Color.Green
-        Me.StartDownload.ForeColor = System.Drawing.Color.Black
-        Me.StartDownload.Location = New System.Drawing.Point(868, 1020)
-        Me.StartDownload.Name = "StartDownload"
-        Me.StartDownload.Size = New System.Drawing.Size(150, 46)
-        Me.StartDownload.TabIndex = 2
-        Me.StartDownload.Text = "Start download"
-        Me.StartDownload.UseVisualStyleBackColor = False
-        '
-        'LagringsMappeTB
-        '
-        Me.LagringsMappeTB.Location = New System.Drawing.Point(399, 945)
-        Me.LagringsMappeTB.Name = "LagringsMappeTB"
-        Me.LagringsMappeTB.Size = New System.Drawing.Size(949, 39)
-        Me.LagringsMappeTB.TabIndex = 3
-        '
-        'SelectFolderButton
-        '
-        Me.SelectFolderButton.BackColor = System.Drawing.Color.Black
-        Me.SelectFolderButton.ForeColor = System.Drawing.Color.Black
-        Me.SelectFolderButton.Image = Global.AtlasRedux_YT_DLP_GUI.My.Resources.Resources.icons8_open_file_folder_48
-        Me.SelectFolderButton.Location = New System.Drawing.Point(310, 935)
-        Me.SelectFolderButton.Name = "SelectFolderButton"
-        Me.SelectFolderButton.Size = New System.Drawing.Size(57, 60)
-        Me.SelectFolderButton.TabIndex = 4
-        Me.SelectFolderButton.UseVisualStyleBackColor = False
-        '
-        'URL1Paste
-        '
-        Me.URL1Paste.ForeColor = System.Drawing.Color.Black
-        Me.URL1Paste.Image = Global.AtlasRedux_YT_DLP_GUI.My.Resources.Resources.icons8_paste_40
-        Me.URL1Paste.Location = New System.Drawing.Point(296, 76)
-        Me.URL1Paste.Name = "URL1Paste"
-        Me.URL1Paste.Size = New System.Drawing.Size(71, 57)
-        Me.URL1Paste.TabIndex = 5
-        Me.URL1Paste.UseVisualStyleBackColor = True
-        '
-        'URL2Paste
-        '
-        Me.URL2Paste.ForeColor = System.Drawing.Color.Black
-        Me.URL2Paste.Image = Global.AtlasRedux_YT_DLP_GUI.My.Resources.Resources.icons8_paste_40
-        Me.URL2Paste.Location = New System.Drawing.Point(296, 162)
-        Me.URL2Paste.Name = "URL2Paste"
-        Me.URL2Paste.Size = New System.Drawing.Size(71, 57)
-        Me.URL2Paste.TabIndex = 7
-        Me.URL2Paste.UseVisualStyleBackColor = True
-        '
-        'URL2
-        '
-        Me.URL2.Location = New System.Drawing.Point(399, 171)
-        Me.URL2.Name = "URL2"
-        Me.URL2.Size = New System.Drawing.Size(1177, 39)
-        Me.URL2.TabIndex = 6
-        '
-        'URL4Paste
-        '
-        Me.URL4Paste.ForeColor = System.Drawing.Color.Black
-        Me.URL4Paste.Image = Global.AtlasRedux_YT_DLP_GUI.My.Resources.Resources.icons8_paste_40
-        Me.URL4Paste.Location = New System.Drawing.Point(296, 336)
-        Me.URL4Paste.Name = "URL4Paste"
-        Me.URL4Paste.Size = New System.Drawing.Size(71, 57)
-        Me.URL4Paste.TabIndex = 11
-        Me.URL4Paste.UseVisualStyleBackColor = True
-        '
-        'URL4
-        '
-        Me.URL4.Location = New System.Drawing.Point(399, 345)
-        Me.URL4.Name = "URL4"
-        Me.URL4.Size = New System.Drawing.Size(1177, 39)
-        Me.URL4.TabIndex = 10
-        '
-        'URL3Paste
-        '
-        Me.URL3Paste.ForeColor = System.Drawing.Color.Black
-        Me.URL3Paste.Image = Global.AtlasRedux_YT_DLP_GUI.My.Resources.Resources.icons8_paste_40
-        Me.URL3Paste.Location = New System.Drawing.Point(296, 250)
-        Me.URL3Paste.Name = "URL3Paste"
-        Me.URL3Paste.Size = New System.Drawing.Size(71, 57)
-        Me.URL3Paste.TabIndex = 9
-        Me.URL3Paste.UseVisualStyleBackColor = True
-        '
-        'URL3
-        '
-        Me.URL3.Location = New System.Drawing.Point(399, 259)
-        Me.URL3.Name = "URL3"
-        Me.URL3.Size = New System.Drawing.Size(1177, 39)
-        Me.URL3.TabIndex = 8
-        '
-        'URL8Paste
-        '
-        Me.URL8Paste.ForeColor = System.Drawing.Color.Black
-        Me.URL8Paste.Image = Global.AtlasRedux_YT_DLP_GUI.My.Resources.Resources.icons8_paste_40
-        Me.URL8Paste.Location = New System.Drawing.Point(296, 681)
-        Me.URL8Paste.Name = "URL8Paste"
-        Me.URL8Paste.Size = New System.Drawing.Size(71, 57)
-        Me.URL8Paste.TabIndex = 19
-        Me.URL8Paste.UseVisualStyleBackColor = True
-        '
-        'URL8
-        '
-        Me.URL8.Location = New System.Drawing.Point(399, 690)
-        Me.URL8.Name = "URL8"
-        Me.URL8.Size = New System.Drawing.Size(1177, 39)
-        Me.URL8.TabIndex = 18
-        '
-        'URL7Paste
-        '
-        Me.URL7Paste.ForeColor = System.Drawing.Color.Black
-        Me.URL7Paste.Image = Global.AtlasRedux_YT_DLP_GUI.My.Resources.Resources.icons8_paste_40
-        Me.URL7Paste.Location = New System.Drawing.Point(296, 595)
-        Me.URL7Paste.Name = "URL7Paste"
-        Me.URL7Paste.Size = New System.Drawing.Size(71, 57)
-        Me.URL7Paste.TabIndex = 17
-        Me.URL7Paste.UseVisualStyleBackColor = True
-        '
-        'URL7
-        '
-        Me.URL7.Location = New System.Drawing.Point(399, 604)
-        Me.URL7.Name = "URL7"
-        Me.URL7.Size = New System.Drawing.Size(1177, 39)
-        Me.URL7.TabIndex = 16
-        '
-        'URL6Paste
-        '
-        Me.URL6Paste.ForeColor = System.Drawing.Color.Black
-        Me.URL6Paste.Image = Global.AtlasRedux_YT_DLP_GUI.My.Resources.Resources.icons8_paste_40
-        Me.URL6Paste.Location = New System.Drawing.Point(296, 507)
-        Me.URL6Paste.Name = "URL6Paste"
-        Me.URL6Paste.Size = New System.Drawing.Size(71, 57)
-        Me.URL6Paste.TabIndex = 15
-        Me.URL6Paste.UseVisualStyleBackColor = True
-        '
-        'URL6
-        '
-        Me.URL6.Location = New System.Drawing.Point(399, 516)
-        Me.URL6.Name = "URL6"
-        Me.URL6.Size = New System.Drawing.Size(1177, 39)
-        Me.URL6.TabIndex = 14
-        '
-        'URL5Paste
-        '
-        Me.URL5Paste.ForeColor = System.Drawing.Color.Black
-        Me.URL5Paste.Image = Global.AtlasRedux_YT_DLP_GUI.My.Resources.Resources.icons8_paste_40
-        Me.URL5Paste.Location = New System.Drawing.Point(296, 421)
-        Me.URL5Paste.Name = "URL5Paste"
-        Me.URL5Paste.Size = New System.Drawing.Size(71, 57)
-        Me.URL5Paste.TabIndex = 13
-        Me.URL5Paste.UseVisualStyleBackColor = True
-        '
-        'URL5
-        '
-        Me.URL5.Location = New System.Drawing.Point(399, 430)
-        Me.URL5.Name = "URL5"
-        Me.URL5.Size = New System.Drawing.Size(1177, 39)
-        Me.URL5.TabIndex = 12
-        '
-        'URL10Paste
-        '
-        Me.URL10Paste.ForeColor = System.Drawing.Color.Black
-        Me.URL10Paste.Image = Global.AtlasRedux_YT_DLP_GUI.My.Resources.Resources.icons8_paste_40
-        Me.URL10Paste.Location = New System.Drawing.Point(296, 850)
-        Me.URL10Paste.Name = "URL10Paste"
-        Me.URL10Paste.Size = New System.Drawing.Size(71, 57)
-        Me.URL10Paste.TabIndex = 23
-        Me.URL10Paste.UseVisualStyleBackColor = True
-        '
-        'URL10
-        '
-        Me.URL10.Location = New System.Drawing.Point(399, 859)
-        Me.URL10.Name = "URL10"
-        Me.URL10.Size = New System.Drawing.Size(1177, 39)
-        Me.URL10.TabIndex = 22
-        '
-        'URL9Paste
-        '
-        Me.URL9Paste.ForeColor = System.Drawing.Color.Black
-        Me.URL9Paste.Image = Global.AtlasRedux_YT_DLP_GUI.My.Resources.Resources.icons8_paste_40
-        Me.URL9Paste.Location = New System.Drawing.Point(296, 764)
-        Me.URL9Paste.Name = "URL9Paste"
-        Me.URL9Paste.Size = New System.Drawing.Size(71, 57)
-        Me.URL9Paste.TabIndex = 21
-        Me.URL9Paste.UseVisualStyleBackColor = True
-        '
-        'URL9
-        '
-        Me.URL9.Location = New System.Drawing.Point(399, 773)
-        Me.URL9.Name = "URL9"
-        Me.URL9.Size = New System.Drawing.Size(1177, 39)
-        Me.URL9.TabIndex = 20
-        '
-        'FolderDefaulter
-        '
-        Me.FolderDefaulter.ForeColor = System.Drawing.Color.DimGray
-        Me.FolderDefaulter.Image = Global.AtlasRedux_YT_DLP_GUI.My.Resources.Resources.checked
-        Me.FolderDefaulter.Location = New System.Drawing.Point(1429, 942)
-        Me.FolderDefaulter.Name = "FolderDefaulter"
-        Me.FolderDefaulter.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.FolderDefaulter.Size = New System.Drawing.Size(66, 53)
-        Me.FolderDefaulter.TabIndex = 24
-        Me.FolderDefaulter.UseVisualStyleBackColor = True
-        '
-        'ResDefaulter
-        '
-        Me.ResDefaulter.ForeColor = System.Drawing.Color.DimGray
-        Me.ResDefaulter.Image = Global.AtlasRedux_YT_DLP_GUI.My.Resources.Resources.checked
-        Me.ResDefaulter.Location = New System.Drawing.Point(96, 777)
-        Me.ResDefaulter.Name = "ResDefaulter"
-        Me.ResDefaulter.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.ResDefaulter.Size = New System.Drawing.Size(66, 53)
-        Me.ResDefaulter.TabIndex = 25
-        Me.ResDefaulter.UseVisualStyleBackColor = True
-        '
-        'TextBoxFolderQ
-        '
-        Me.TextBoxFolderQ.BackColor = System.Drawing.Color.Black
-        Me.TextBoxFolderQ.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBoxFolderQ.ForeColor = System.Drawing.Color.White
-        Me.TextBoxFolderQ.Location = New System.Drawing.Point(1324, 904)
-        Me.TextBoxFolderQ.Name = "TextBoxFolderQ"
-        Me.TextBoxFolderQ.Size = New System.Drawing.Size(314, 32)
-        Me.TextBoxFolderQ.TabIndex = 26
-        Me.TextBoxFolderQ.Text = "Current folder is default!"
-        '
-        'TextBoxResQ
-        '
-        Me.TextBoxResQ.BackColor = System.Drawing.Color.Black
-        Me.TextBoxResQ.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBoxResQ.ForeColor = System.Drawing.Color.White
-        Me.TextBoxResQ.Location = New System.Drawing.Point(56, 702)
-        Me.TextBoxResQ.Multiline = True
-        Me.TextBoxResQ.Name = "TextBoxResQ"
-        Me.TextBoxResQ.Size = New System.Drawing.Size(154, 70)
-        Me.TextBoxResQ.TabIndex = 27
-        Me.TextBoxResQ.Text = "Current res." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "is default!"
-        '
-        'ResetURLs
-        '
-        Me.ResetURLs.Image = Global.AtlasRedux_YT_DLP_GUI.My.Resources.Resources.cross
-        Me.ResetURLs.Location = New System.Drawing.Point(2158, 1052)
-        Me.ResetURLs.Name = "ResetURLs"
-        Me.ResetURLs.Size = New System.Drawing.Size(55, 46)
-        Me.ResetURLs.TabIndex = 28
-        Me.ResetURLs.UseVisualStyleBackColor = True
-        '
-        'SillyLittleTextBox
-        '
-        Me.SillyLittleTextBox.BackColor = System.Drawing.Color.Black
-        Me.SillyLittleTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.SillyLittleTextBox.ForeColor = System.Drawing.Color.White
-        Me.SillyLittleTextBox.Location = New System.Drawing.Point(1858, 1059)
-        Me.SillyLittleTextBox.Name = "SillyLittleTextBox"
-        Me.SillyLittleTextBox.Size = New System.Drawing.Size(294, 32)
-        Me.SillyLittleTextBox.TabIndex = 29
-        Me.SillyLittleTextBox.Text = "Click X to reset URL inputs:"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.BackColor = System.Drawing.Color.Black
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.ForeColor = System.Drawing.Color.White
-        Me.TextBox2.Location = New System.Drawing.Point(68, 317)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(133, 69)
-        Me.TextBox2.TabIndex = 31
-        Me.TextBox2.Text = "Select max" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "resolution."
-        '
-        'TextBox3
-        '
-        Me.TextBox3.BackColor = System.Drawing.Color.Black
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox3.ForeColor = System.Drawing.Color.Red
-        Me.TextBox3.Location = New System.Drawing.Point(12, 1084)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(503, 32)
-        Me.TextBox3.TabIndex = 32
-        Me.TextBox3.Text = "Atlas' YouTube Downloader GUI for YT-DLP (C)"
-        '
-        'SetAudioOnly
-        '
-        Me.SetAudioOnly.AutoSize = True
-        Me.SetAudioOnly.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.SetAudioOnly.Location = New System.Drawing.Point(399, 1011)
-        Me.SetAudioOnly.Name = "SetAudioOnly"
-        Me.SetAudioOnly.Size = New System.Drawing.Size(177, 36)
-        Me.SetAudioOnly.TabIndex = 33
-        Me.SetAudioOnly.Text = "Audio Only?"
-        Me.SetAudioOnly.UseVisualStyleBackColor = True
-        '
-        'URL1Name
-        '
-        Me.URL1Name.BackColor = System.Drawing.Color.Black
-        Me.URL1Name.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.URL1Name.ForeColor = System.Drawing.Color.White
-        Me.URL1Name.Location = New System.Drawing.Point(1582, 88)
-        Me.URL1Name.Name = "URL1Name"
-        Me.URL1Name.ReadOnly = True
-        Me.URL1Name.Size = New System.Drawing.Size(631, 32)
-        Me.URL1Name.TabIndex = 34
-        '
-        'InfoPasteURL
-        '
-        Me.InfoPasteURL.BackColor = System.Drawing.Color.Black
-        Me.InfoPasteURL.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.InfoPasteURL.ForeColor = System.Drawing.Color.White
-        Me.InfoPasteURL.Location = New System.Drawing.Point(273, 31)
-        Me.InfoPasteURL.Name = "InfoPasteURL"
-        Me.InfoPasteURL.Size = New System.Drawing.Size(116, 32)
-        Me.InfoPasteURL.TabIndex = 35
-        Me.InfoPasteURL.Text = "Paste URL"
-        '
-        'InfoManualURL
-        '
-        Me.InfoManualURL.BackColor = System.Drawing.Color.Black
-        Me.InfoManualURL.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.InfoManualURL.ForeColor = System.Drawing.Color.White
-        Me.InfoManualURL.Location = New System.Drawing.Point(609, 31)
-        Me.InfoManualURL.Name = "InfoManualURL"
-        Me.InfoManualURL.Size = New System.Drawing.Size(765, 32)
-        Me.InfoManualURL.TabIndex = 36
-        Me.InfoManualURL.Text = "Manually writing URL does not check for filename or update filename."
-        '
-        'InfoFileName
-        '
-        Me.InfoFileName.BackColor = System.Drawing.Color.Black
-        Me.InfoFileName.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.InfoFileName.ForeColor = System.Drawing.Color.White
-        Me.InfoFileName.Location = New System.Drawing.Point(1858, 31)
-        Me.InfoFileName.Name = "InfoFileName"
-        Me.InfoFileName.Size = New System.Drawing.Size(116, 32)
-        Me.InfoFileName.TabIndex = 37
-        Me.InfoFileName.Text = "Filename"
-        '
-        'URL2Name
-        '
-        Me.URL2Name.BackColor = System.Drawing.Color.Black
-        Me.URL2Name.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.URL2Name.ForeColor = System.Drawing.Color.White
-        Me.URL2Name.Location = New System.Drawing.Point(1582, 174)
-        Me.URL2Name.Name = "URL2Name"
-        Me.URL2Name.ReadOnly = True
-        Me.URL2Name.Size = New System.Drawing.Size(631, 32)
-        Me.URL2Name.TabIndex = 38
-        '
-        'URL4Name
-        '
-        Me.URL4Name.BackColor = System.Drawing.Color.Black
-        Me.URL4Name.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.URL4Name.ForeColor = System.Drawing.Color.White
-        Me.URL4Name.Location = New System.Drawing.Point(1582, 348)
-        Me.URL4Name.Name = "URL4Name"
-        Me.URL4Name.ReadOnly = True
-        Me.URL4Name.Size = New System.Drawing.Size(631, 32)
-        Me.URL4Name.TabIndex = 40
-        '
-        'URL3Name
-        '
-        Me.URL3Name.BackColor = System.Drawing.Color.Black
-        Me.URL3Name.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.URL3Name.ForeColor = System.Drawing.Color.White
-        Me.URL3Name.Location = New System.Drawing.Point(1582, 262)
-        Me.URL3Name.Name = "URL3Name"
-        Me.URL3Name.ReadOnly = True
-        Me.URL3Name.Size = New System.Drawing.Size(631, 32)
-        Me.URL3Name.TabIndex = 39
-        '
-        'URL8Name
-        '
-        Me.URL8Name.BackColor = System.Drawing.Color.Black
-        Me.URL8Name.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.URL8Name.ForeColor = System.Drawing.Color.White
-        Me.URL8Name.Location = New System.Drawing.Point(1582, 693)
-        Me.URL8Name.Name = "URL8Name"
-        Me.URL8Name.ReadOnly = True
-        Me.URL8Name.Size = New System.Drawing.Size(631, 32)
-        Me.URL8Name.TabIndex = 45
-        '
-        'URL7Name
-        '
-        Me.URL7Name.BackColor = System.Drawing.Color.Black
-        Me.URL7Name.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.URL7Name.ForeColor = System.Drawing.Color.White
-        Me.URL7Name.Location = New System.Drawing.Point(1582, 607)
-        Me.URL7Name.Name = "URL7Name"
-        Me.URL7Name.ReadOnly = True
-        Me.URL7Name.Size = New System.Drawing.Size(631, 32)
-        Me.URL7Name.TabIndex = 44
-        '
-        'URL6Name
-        '
-        Me.URL6Name.BackColor = System.Drawing.Color.Black
-        Me.URL6Name.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.URL6Name.ForeColor = System.Drawing.Color.White
-        Me.URL6Name.Location = New System.Drawing.Point(1582, 519)
-        Me.URL6Name.Name = "URL6Name"
-        Me.URL6Name.ReadOnly = True
-        Me.URL6Name.Size = New System.Drawing.Size(631, 32)
-        Me.URL6Name.TabIndex = 43
-        '
-        'URL5Name
-        '
-        Me.URL5Name.BackColor = System.Drawing.Color.Black
-        Me.URL5Name.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.URL5Name.ForeColor = System.Drawing.Color.White
-        Me.URL5Name.Location = New System.Drawing.Point(1582, 433)
-        Me.URL5Name.Name = "URL5Name"
-        Me.URL5Name.ReadOnly = True
-        Me.URL5Name.Size = New System.Drawing.Size(631, 32)
-        Me.URL5Name.TabIndex = 41
-        '
-        'URL10Name
-        '
-        Me.URL10Name.BackColor = System.Drawing.Color.Black
-        Me.URL10Name.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.URL10Name.ForeColor = System.Drawing.Color.White
-        Me.URL10Name.Location = New System.Drawing.Point(1582, 862)
-        Me.URL10Name.Name = "URL10Name"
-        Me.URL10Name.ReadOnly = True
-        Me.URL10Name.Size = New System.Drawing.Size(631, 32)
-        Me.URL10Name.TabIndex = 47
-        '
-        'URL9Name
-        '
-        Me.URL9Name.BackColor = System.Drawing.Color.Black
-        Me.URL9Name.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.URL9Name.ForeColor = System.Drawing.Color.White
-        Me.URL9Name.Location = New System.Drawing.Point(1582, 776)
-        Me.URL9Name.Name = "URL9Name"
-        Me.URL9Name.ReadOnly = True
-        Me.URL9Name.Size = New System.Drawing.Size(631, 32)
-        Me.URL9Name.TabIndex = 46
-        '
-        'Form1
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 32.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(2234, 1128)
-        Me.Controls.Add(Me.URL10Name)
-        Me.Controls.Add(Me.URL9Name)
-        Me.Controls.Add(Me.URL8Name)
-        Me.Controls.Add(Me.URL7Name)
-        Me.Controls.Add(Me.URL6Name)
-        Me.Controls.Add(Me.URL5Name)
-        Me.Controls.Add(Me.URL4Name)
-        Me.Controls.Add(Me.URL3Name)
-        Me.Controls.Add(Me.URL2Name)
-        Me.Controls.Add(Me.InfoFileName)
-        Me.Controls.Add(Me.InfoManualURL)
-        Me.Controls.Add(Me.InfoPasteURL)
-        Me.Controls.Add(Me.URL1Name)
-        Me.Controls.Add(Me.SetAudioOnly)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.SillyLittleTextBox)
-        Me.Controls.Add(Me.ResetURLs)
-        Me.Controls.Add(Me.TextBoxResQ)
-        Me.Controls.Add(Me.TextBoxFolderQ)
-        Me.Controls.Add(Me.ResDefaulter)
-        Me.Controls.Add(Me.FolderDefaulter)
-        Me.Controls.Add(Me.URL10Paste)
-        Me.Controls.Add(Me.URL10)
-        Me.Controls.Add(Me.URL9Paste)
-        Me.Controls.Add(Me.URL9)
-        Me.Controls.Add(Me.URL8Paste)
-        Me.Controls.Add(Me.URL8)
-        Me.Controls.Add(Me.URL7Paste)
-        Me.Controls.Add(Me.URL7)
-        Me.Controls.Add(Me.URL6Paste)
-        Me.Controls.Add(Me.URL6)
-        Me.Controls.Add(Me.URL5Paste)
-        Me.Controls.Add(Me.URL5)
-        Me.Controls.Add(Me.URL4Paste)
-        Me.Controls.Add(Me.URL4)
-        Me.Controls.Add(Me.URL3Paste)
-        Me.Controls.Add(Me.URL3)
-        Me.Controls.Add(Me.URL2Paste)
-        Me.Controls.Add(Me.URL2)
-        Me.Controls.Add(Me.URL1Paste)
-        Me.Controls.Add(Me.SelectFolderButton)
-        Me.Controls.Add(Me.LagringsMappeTB)
-        Me.Controls.Add(Me.StartDownload)
-        Me.Controls.Add(Me.URL1)
-        Me.Controls.Add(Me.Resolution)
-        Me.ForeColor = System.Drawing.Color.White
-        Me.Name = "Form1"
-        Me.Text = "Form1"
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        Resolution = New ListBox()
+        URL1 = New TextBox()
+        StartDownload = New Button()
+        LagringsMappeTB = New TextBox()
+        SelectFolderButton = New Button()
+        FolderBrowserDialog1 = New FolderBrowserDialog()
+        URL1Paste = New Button()
+        URL2Paste = New Button()
+        URL2 = New TextBox()
+        URL4Paste = New Button()
+        URL4 = New TextBox()
+        URL3Paste = New Button()
+        URL3 = New TextBox()
+        URL8Paste = New Button()
+        URL8 = New TextBox()
+        URL7Paste = New Button()
+        URL7 = New TextBox()
+        URL6Paste = New Button()
+        URL6 = New TextBox()
+        URL5Paste = New Button()
+        URL5 = New TextBox()
+        URL10Paste = New Button()
+        URL10 = New TextBox()
+        URL9Paste = New Button()
+        URL9 = New TextBox()
+        FolderDefaulter = New Button()
+        ResDefaulter = New Button()
+        TextBoxFolderQ = New TextBox()
+        TextBoxResQ = New TextBox()
+        ResetURLs = New Button()
+        SillyLittleTextBox = New TextBox()
+        TextBox2 = New TextBox()
+        TextBox3 = New TextBox()
+        SetAudioOnly = New CheckBox()
+        URL1Name = New TextBox()
+        InfoPasteURL = New TextBox()
+        InfoManualURL = New TextBox()
+        InfoFileName = New TextBox()
+        URL2Name = New TextBox()
+        URL4Name = New TextBox()
+        URL3Name = New TextBox()
+        URL8Name = New TextBox()
+        URL7Name = New TextBox()
+        URL6Name = New TextBox()
+        URL5Name = New TextBox()
+        URL10Name = New TextBox()
+        URL9Name = New TextBox()
+        SuspendLayout()
+        ' 
+        ' Resolution
+        ' 
+        Resolution.FormattingEnabled = True
+        Resolution.ItemHeight = 30
+        Resolution.Items.AddRange(New Object() {"144", "240", "360", "480", "720", "1080", "1440", "2160"})
+        Resolution.Location = New Point(89, 368)
+        Resolution.Name = "Resolution"
+        Resolution.Size = New Size(60, 244)
+        Resolution.TabIndex = 0
+        ' 
+        ' URL1
+        ' 
+        URL1.Location = New Point(368, 80)
+        URL1.Name = "URL1"
+        URL1.Size = New Size(1087, 35)
+        URL1.TabIndex = 1
+        ' 
+        ' StartDownload
+        ' 
+        StartDownload.BackColor = Color.Green
+        StartDownload.ForeColor = Color.Black
+        StartDownload.Location = New Point(801, 956)
+        StartDownload.Name = "StartDownload"
+        StartDownload.Size = New Size(138, 43)
+        StartDownload.TabIndex = 2
+        StartDownload.Text = "Start download"
+        StartDownload.UseVisualStyleBackColor = False
+        ' 
+        ' LagringsMappeTB
+        ' 
+        LagringsMappeTB.Location = New Point(368, 886)
+        LagringsMappeTB.Name = "LagringsMappeTB"
+        LagringsMappeTB.Size = New Size(876, 35)
+        LagringsMappeTB.TabIndex = 3
+        ' 
+        ' SelectFolderButton
+        ' 
+        SelectFolderButton.BackColor = Color.Black
+        SelectFolderButton.ForeColor = Color.Black
+        SelectFolderButton.Image = My.Resources.Resources.icons8_open_file_folder_48
+        SelectFolderButton.Location = New Point(286, 877)
+        SelectFolderButton.Name = "SelectFolderButton"
+        SelectFolderButton.Size = New Size(53, 56)
+        SelectFolderButton.TabIndex = 4
+        SelectFolderButton.UseVisualStyleBackColor = False
+        ' 
+        ' URL1Paste
+        ' 
+        URL1Paste.ForeColor = Color.Black
+        URL1Paste.Image = My.Resources.Resources.icons8_paste_40
+        URL1Paste.Location = New Point(273, 71)
+        URL1Paste.Name = "URL1Paste"
+        URL1Paste.Size = New Size(66, 53)
+        URL1Paste.TabIndex = 5
+        URL1Paste.UseVisualStyleBackColor = True
+        ' 
+        ' URL2Paste
+        ' 
+        URL2Paste.ForeColor = Color.Black
+        URL2Paste.Image = My.Resources.Resources.icons8_paste_40
+        URL2Paste.Location = New Point(273, 152)
+        URL2Paste.Name = "URL2Paste"
+        URL2Paste.Size = New Size(66, 53)
+        URL2Paste.TabIndex = 7
+        URL2Paste.UseVisualStyleBackColor = True
+        ' 
+        ' URL2
+        ' 
+        URL2.Location = New Point(368, 160)
+        URL2.Name = "URL2"
+        URL2.Size = New Size(1087, 35)
+        URL2.TabIndex = 6
+        ' 
+        ' URL4Paste
+        ' 
+        URL4Paste.ForeColor = Color.Black
+        URL4Paste.Image = My.Resources.Resources.icons8_paste_40
+        URL4Paste.Location = New Point(273, 315)
+        URL4Paste.Name = "URL4Paste"
+        URL4Paste.Size = New Size(66, 53)
+        URL4Paste.TabIndex = 11
+        URL4Paste.UseVisualStyleBackColor = True
+        ' 
+        ' URL4
+        ' 
+        URL4.Location = New Point(368, 323)
+        URL4.Name = "URL4"
+        URL4.Size = New Size(1087, 35)
+        URL4.TabIndex = 10
+        ' 
+        ' URL3Paste
+        ' 
+        URL3Paste.ForeColor = Color.Black
+        URL3Paste.Image = My.Resources.Resources.icons8_paste_40
+        URL3Paste.Location = New Point(273, 234)
+        URL3Paste.Name = "URL3Paste"
+        URL3Paste.Size = New Size(66, 53)
+        URL3Paste.TabIndex = 9
+        URL3Paste.UseVisualStyleBackColor = True
+        ' 
+        ' URL3
+        ' 
+        URL3.Location = New Point(368, 243)
+        URL3.Name = "URL3"
+        URL3.Size = New Size(1087, 35)
+        URL3.TabIndex = 8
+        ' 
+        ' URL8Paste
+        ' 
+        URL8Paste.ForeColor = Color.Black
+        URL8Paste.Image = My.Resources.Resources.icons8_paste_40
+        URL8Paste.Location = New Point(273, 638)
+        URL8Paste.Name = "URL8Paste"
+        URL8Paste.Size = New Size(66, 53)
+        URL8Paste.TabIndex = 19
+        URL8Paste.UseVisualStyleBackColor = True
+        ' 
+        ' URL8
+        ' 
+        URL8.Location = New Point(368, 647)
+        URL8.Name = "URL8"
+        URL8.Size = New Size(1087, 35)
+        URL8.TabIndex = 18
+        ' 
+        ' URL7Paste
+        ' 
+        URL7Paste.ForeColor = Color.Black
+        URL7Paste.Image = My.Resources.Resources.icons8_paste_40
+        URL7Paste.Location = New Point(273, 558)
+        URL7Paste.Name = "URL7Paste"
+        URL7Paste.Size = New Size(66, 53)
+        URL7Paste.TabIndex = 17
+        URL7Paste.UseVisualStyleBackColor = True
+        ' 
+        ' URL7
+        ' 
+        URL7.Location = New Point(368, 566)
+        URL7.Name = "URL7"
+        URL7.Size = New Size(1087, 35)
+        URL7.TabIndex = 16
+        ' 
+        ' URL6Paste
+        ' 
+        URL6Paste.ForeColor = Color.Black
+        URL6Paste.Image = My.Resources.Resources.icons8_paste_40
+        URL6Paste.Location = New Point(273, 475)
+        URL6Paste.Name = "URL6Paste"
+        URL6Paste.Size = New Size(66, 53)
+        URL6Paste.TabIndex = 15
+        URL6Paste.UseVisualStyleBackColor = True
+        ' 
+        ' URL6
+        ' 
+        URL6.Location = New Point(368, 484)
+        URL6.Name = "URL6"
+        URL6.Size = New Size(1087, 35)
+        URL6.TabIndex = 14
+        ' 
+        ' URL5Paste
+        ' 
+        URL5Paste.ForeColor = Color.Black
+        URL5Paste.Image = My.Resources.Resources.icons8_paste_40
+        URL5Paste.Location = New Point(273, 395)
+        URL5Paste.Name = "URL5Paste"
+        URL5Paste.Size = New Size(66, 53)
+        URL5Paste.TabIndex = 13
+        URL5Paste.UseVisualStyleBackColor = True
+        ' 
+        ' URL5
+        ' 
+        URL5.Location = New Point(368, 403)
+        URL5.Name = "URL5"
+        URL5.Size = New Size(1087, 35)
+        URL5.TabIndex = 12
+        ' 
+        ' URL10Paste
+        ' 
+        URL10Paste.ForeColor = Color.Black
+        URL10Paste.Image = My.Resources.Resources.icons8_paste_40
+        URL10Paste.Location = New Point(273, 797)
+        URL10Paste.Name = "URL10Paste"
+        URL10Paste.Size = New Size(66, 53)
+        URL10Paste.TabIndex = 23
+        URL10Paste.UseVisualStyleBackColor = True
+        ' 
+        ' URL10
+        ' 
+        URL10.Location = New Point(368, 805)
+        URL10.Name = "URL10"
+        URL10.Size = New Size(1087, 35)
+        URL10.TabIndex = 22
+        ' 
+        ' URL9Paste
+        ' 
+        URL9Paste.ForeColor = Color.Black
+        URL9Paste.Image = My.Resources.Resources.icons8_paste_40
+        URL9Paste.Location = New Point(273, 716)
+        URL9Paste.Name = "URL9Paste"
+        URL9Paste.Size = New Size(66, 53)
+        URL9Paste.TabIndex = 21
+        URL9Paste.UseVisualStyleBackColor = True
+        ' 
+        ' URL9
+        ' 
+        URL9.Location = New Point(368, 725)
+        URL9.Name = "URL9"
+        URL9.Size = New Size(1087, 35)
+        URL9.TabIndex = 20
+        ' 
+        ' FolderDefaulter
+        ' 
+        FolderDefaulter.ForeColor = Color.DimGray
+        FolderDefaulter.Image = My.Resources.Resources.checked
+        FolderDefaulter.Location = New Point(1319, 883)
+        FolderDefaulter.Name = "FolderDefaulter"
+        FolderDefaulter.RightToLeft = RightToLeft.No
+        FolderDefaulter.Size = New Size(61, 50)
+        FolderDefaulter.TabIndex = 24
+        FolderDefaulter.UseVisualStyleBackColor = True
+        ' 
+        ' ResDefaulter
+        ' 
+        ResDefaulter.ForeColor = Color.DimGray
+        ResDefaulter.Image = My.Resources.Resources.checked
+        ResDefaulter.Location = New Point(89, 728)
+        ResDefaulter.Name = "ResDefaulter"
+        ResDefaulter.RightToLeft = RightToLeft.No
+        ResDefaulter.Size = New Size(61, 50)
+        ResDefaulter.TabIndex = 25
+        ResDefaulter.UseVisualStyleBackColor = True
+        ' 
+        ' TextBoxFolderQ
+        ' 
+        TextBoxFolderQ.BackColor = Color.Black
+        TextBoxFolderQ.BorderStyle = BorderStyle.None
+        TextBoxFolderQ.ForeColor = Color.White
+        TextBoxFolderQ.Location = New Point(1222, 848)
+        TextBoxFolderQ.Name = "TextBoxFolderQ"
+        TextBoxFolderQ.Size = New Size(290, 28)
+        TextBoxFolderQ.TabIndex = 26
+        TextBoxFolderQ.Text = "Current folder is default!"
+        ' 
+        ' TextBoxResQ
+        ' 
+        TextBoxResQ.BackColor = Color.Black
+        TextBoxResQ.BorderStyle = BorderStyle.None
+        TextBoxResQ.ForeColor = Color.White
+        TextBoxResQ.Location = New Point(52, 658)
+        TextBoxResQ.Multiline = True
+        TextBoxResQ.Name = "TextBoxResQ"
+        TextBoxResQ.Size = New Size(142, 66)
+        TextBoxResQ.TabIndex = 27
+        TextBoxResQ.Text = "Current res." & vbCrLf & "is default!"
+        ' 
+        ' ResetURLs
+        ' 
+        ResetURLs.Image = My.Resources.Resources.cross
+        ResetURLs.Location = New Point(1992, 986)
+        ResetURLs.Name = "ResetURLs"
+        ResetURLs.Size = New Size(51, 43)
+        ResetURLs.TabIndex = 28
+        ResetURLs.UseVisualStyleBackColor = True
+        ' 
+        ' SillyLittleTextBox
+        ' 
+        SillyLittleTextBox.BackColor = Color.Black
+        SillyLittleTextBox.BorderStyle = BorderStyle.None
+        SillyLittleTextBox.ForeColor = Color.White
+        SillyLittleTextBox.Location = New Point(1715, 993)
+        SillyLittleTextBox.Name = "SillyLittleTextBox"
+        SillyLittleTextBox.Size = New Size(271, 28)
+        SillyLittleTextBox.TabIndex = 29
+        SillyLittleTextBox.Text = "Click X to reset URL inputs:"
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.BackColor = Color.Black
+        TextBox2.BorderStyle = BorderStyle.None
+        TextBox2.ForeColor = Color.White
+        TextBox2.Location = New Point(63, 297)
+        TextBox2.Multiline = True
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(123, 65)
+        TextBox2.TabIndex = 31
+        TextBox2.Text = "Select max" & vbCrLf & "resolution."
+        ' 
+        ' TextBox3
+        ' 
+        TextBox3.BackColor = Color.Black
+        TextBox3.BorderStyle = BorderStyle.None
+        TextBox3.ForeColor = Color.Red
+        TextBox3.Location = New Point(11, 1016)
+        TextBox3.Name = "TextBox3"
+        TextBox3.Size = New Size(464, 28)
+        TextBox3.TabIndex = 32
+        TextBox3.Text = "Atlas' YouTube Downloader GUI for YT-DLP (C)"
+        ' 
+        ' SetAudioOnly
+        ' 
+        SetAudioOnly.AutoSize = True
+        SetAudioOnly.CheckAlign = ContentAlignment.MiddleRight
+        SetAudioOnly.Location = New Point(368, 948)
+        SetAudioOnly.Name = "SetAudioOnly"
+        SetAudioOnly.Size = New Size(152, 34)
+        SetAudioOnly.TabIndex = 33
+        SetAudioOnly.Text = "Audio Only?"
+        SetAudioOnly.UseVisualStyleBackColor = True
+        ' 
+        ' URL1Name
+        ' 
+        URL1Name.BackColor = Color.Black
+        URL1Name.BorderStyle = BorderStyle.None
+        URL1Name.ForeColor = Color.White
+        URL1Name.Location = New Point(1460, 82)
+        URL1Name.Name = "URL1Name"
+        URL1Name.ReadOnly = True
+        URL1Name.Size = New Size(582, 28)
+        URL1Name.TabIndex = 34
+        ' 
+        ' InfoPasteURL
+        ' 
+        InfoPasteURL.BackColor = Color.Black
+        InfoPasteURL.BorderStyle = BorderStyle.None
+        InfoPasteURL.ForeColor = Color.White
+        InfoPasteURL.Location = New Point(252, 29)
+        InfoPasteURL.Name = "InfoPasteURL"
+        InfoPasteURL.Size = New Size(107, 28)
+        InfoPasteURL.TabIndex = 35
+        InfoPasteURL.Text = "Paste URL"
+        ' 
+        ' InfoManualURL
+        ' 
+        InfoManualURL.BackColor = Color.Black
+        InfoManualURL.BorderStyle = BorderStyle.None
+        InfoManualURL.ForeColor = Color.White
+        InfoManualURL.Location = New Point(562, 29)
+        InfoManualURL.Name = "InfoManualURL"
+        InfoManualURL.Size = New Size(706, 28)
+        InfoManualURL.TabIndex = 36
+        InfoManualURL.Text = "Manually writing URL does not check for filename or update filename."
+        ' 
+        ' InfoFileName
+        ' 
+        InfoFileName.BackColor = Color.Black
+        InfoFileName.BorderStyle = BorderStyle.None
+        InfoFileName.ForeColor = Color.White
+        InfoFileName.Location = New Point(1715, 29)
+        InfoFileName.Name = "InfoFileName"
+        InfoFileName.Size = New Size(107, 28)
+        InfoFileName.TabIndex = 37
+        InfoFileName.Text = "Filename"
+        ' 
+        ' URL2Name
+        ' 
+        URL2Name.BackColor = Color.Black
+        URL2Name.BorderStyle = BorderStyle.None
+        URL2Name.ForeColor = Color.White
+        URL2Name.Location = New Point(1460, 163)
+        URL2Name.Name = "URL2Name"
+        URL2Name.ReadOnly = True
+        URL2Name.Size = New Size(582, 28)
+        URL2Name.TabIndex = 38
+        ' 
+        ' URL4Name
+        ' 
+        URL4Name.BackColor = Color.Black
+        URL4Name.BorderStyle = BorderStyle.None
+        URL4Name.ForeColor = Color.White
+        URL4Name.Location = New Point(1460, 326)
+        URL4Name.Name = "URL4Name"
+        URL4Name.ReadOnly = True
+        URL4Name.Size = New Size(582, 28)
+        URL4Name.TabIndex = 40
+        ' 
+        ' URL3Name
+        ' 
+        URL3Name.BackColor = Color.Black
+        URL3Name.BorderStyle = BorderStyle.None
+        URL3Name.ForeColor = Color.White
+        URL3Name.Location = New Point(1460, 246)
+        URL3Name.Name = "URL3Name"
+        URL3Name.ReadOnly = True
+        URL3Name.Size = New Size(582, 28)
+        URL3Name.TabIndex = 39
+        ' 
+        ' URL8Name
+        ' 
+        URL8Name.BackColor = Color.Black
+        URL8Name.BorderStyle = BorderStyle.None
+        URL8Name.ForeColor = Color.White
+        URL8Name.Location = New Point(1460, 650)
+        URL8Name.Name = "URL8Name"
+        URL8Name.ReadOnly = True
+        URL8Name.Size = New Size(582, 28)
+        URL8Name.TabIndex = 45
+        ' 
+        ' URL7Name
+        ' 
+        URL7Name.BackColor = Color.Black
+        URL7Name.BorderStyle = BorderStyle.None
+        URL7Name.ForeColor = Color.White
+        URL7Name.Location = New Point(1460, 569)
+        URL7Name.Name = "URL7Name"
+        URL7Name.ReadOnly = True
+        URL7Name.Size = New Size(582, 28)
+        URL7Name.TabIndex = 44
+        ' 
+        ' URL6Name
+        ' 
+        URL6Name.BackColor = Color.Black
+        URL6Name.BorderStyle = BorderStyle.None
+        URL6Name.ForeColor = Color.White
+        URL6Name.Location = New Point(1460, 487)
+        URL6Name.Name = "URL6Name"
+        URL6Name.ReadOnly = True
+        URL6Name.Size = New Size(582, 28)
+        URL6Name.TabIndex = 43
+        ' 
+        ' URL5Name
+        ' 
+        URL5Name.BackColor = Color.Black
+        URL5Name.BorderStyle = BorderStyle.None
+        URL5Name.ForeColor = Color.White
+        URL5Name.Location = New Point(1460, 406)
+        URL5Name.Name = "URL5Name"
+        URL5Name.ReadOnly = True
+        URL5Name.Size = New Size(582, 28)
+        URL5Name.TabIndex = 41
+        ' 
+        ' URL10Name
+        ' 
+        URL10Name.BackColor = Color.Black
+        URL10Name.BorderStyle = BorderStyle.None
+        URL10Name.ForeColor = Color.White
+        URL10Name.Location = New Point(1460, 808)
+        URL10Name.Name = "URL10Name"
+        URL10Name.ReadOnly = True
+        URL10Name.Size = New Size(582, 28)
+        URL10Name.TabIndex = 47
+        ' 
+        ' URL9Name
+        ' 
+        URL9Name.BackColor = Color.Black
+        URL9Name.BorderStyle = BorderStyle.None
+        URL9Name.ForeColor = Color.White
+        URL9Name.Location = New Point(1460, 728)
+        URL9Name.Name = "URL9Name"
+        URL9Name.ReadOnly = True
+        URL9Name.Size = New Size(582, 28)
+        URL9Name.TabIndex = 46
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(12.0F, 30.0F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.Black
+        ClientSize = New Size(2062, 1058)
+        Controls.Add(URL10Name)
+        Controls.Add(URL9Name)
+        Controls.Add(URL8Name)
+        Controls.Add(URL7Name)
+        Controls.Add(URL6Name)
+        Controls.Add(URL5Name)
+        Controls.Add(URL4Name)
+        Controls.Add(URL3Name)
+        Controls.Add(URL2Name)
+        Controls.Add(InfoFileName)
+        Controls.Add(InfoManualURL)
+        Controls.Add(InfoPasteURL)
+        Controls.Add(URL1Name)
+        Controls.Add(SetAudioOnly)
+        Controls.Add(TextBox3)
+        Controls.Add(TextBox2)
+        Controls.Add(SillyLittleTextBox)
+        Controls.Add(ResetURLs)
+        Controls.Add(TextBoxResQ)
+        Controls.Add(TextBoxFolderQ)
+        Controls.Add(ResDefaulter)
+        Controls.Add(FolderDefaulter)
+        Controls.Add(URL10Paste)
+        Controls.Add(URL10)
+        Controls.Add(URL9Paste)
+        Controls.Add(URL9)
+        Controls.Add(URL8Paste)
+        Controls.Add(URL8)
+        Controls.Add(URL7Paste)
+        Controls.Add(URL7)
+        Controls.Add(URL6Paste)
+        Controls.Add(URL6)
+        Controls.Add(URL5Paste)
+        Controls.Add(URL5)
+        Controls.Add(URL4Paste)
+        Controls.Add(URL4)
+        Controls.Add(URL3Paste)
+        Controls.Add(URL3)
+        Controls.Add(URL2Paste)
+        Controls.Add(URL2)
+        Controls.Add(URL1Paste)
+        Controls.Add(SelectFolderButton)
+        Controls.Add(LagringsMappeTB)
+        Controls.Add(StartDownload)
+        Controls.Add(URL1)
+        Controls.Add(Resolution)
+        ForeColor = Color.White
+        Name = "Form1"
+        Text = "Form1"
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents Resolution As ListBox

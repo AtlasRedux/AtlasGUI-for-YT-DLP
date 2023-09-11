@@ -26,21 +26,21 @@ Public Class Form1
         Dim versionnumber = versionchecker.GetStringAsync("https://www.youtubetransfer.com/AtlasGUI.NewestVersion").Result
         Dim UpdateOrNot As Integer
 
-        If versionnumber <> My.Settings.localversion Then
-            UpdateOrNot = MsgBox("New version available. Do you want to download the latest version?", vbQuestion + vbYesNo + vbDefaultButton2, "Version Checker")
-            If UpdateOrNot = vbYes Then
-                My.Settings.localversion = versionnumber
-                Process.Start("AtlasGUIUpdate.bat")
-                Close()
-            End If
-        End If
+        REM  If versionnumber <> My.Settings.localversion Then
+        REM UpdateOrNot = MsgBox("New version available. Do you want to download the latest version?", vbQuestion + vbYesNo + vbDefaultButton2, "Version Checker")
+        REM If UpdateOrNot = vbYes Then
+        REM My.Settings.localversion = versionnumber
+        REM    Process.Start("AtlasGUIUpdate.bat")
+        REM Close()
+        REM End If
+        REM End If
 
         Dim tempname As String
 
         Dim TitleDuh As String = "Atlas' Youtube Downloader GUI for YT-DLP"
         Me.Text = TitleDuh + "        " + "Version: " + My.Settings.localversion
 
-        Dim UpdateDependencies As New ProcessStartInfo("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "echo Updating dependencies, please wait..." + "&" + "yt-dlp.exe -U ") REM -q
+        Dim UpdateDependencies As New ProcessStartInfo("cmd", "/C Title Atlas' Youtube Downloader GUI for YT-DLP V2.0" + "&" + "Setlocal EnableDelayedExpansion" + "&" + "echo Updating dependencies, please wait..." + "&" + "yt-dlp.exe --update-to nightly -U ") REM -q
         REM UpdateDependencies.CreateNoWindow = True
         Process.Start(UpdateDependencies)
 
@@ -366,6 +366,9 @@ Public Class Form1
         URL10Name.Text = Nothing
     End Sub
 
+    Private Sub URL1_TextChanged(sender As Object, e As EventArgs) Handles URL1.TextChanged
+
+    End Sub
 End Class
 
 Public Class RunTheThing
